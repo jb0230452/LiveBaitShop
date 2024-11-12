@@ -1,2 +1,80 @@
 /* Justin Buckner */
 
+html{
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.wrapper{
+    display: grid;
+    grid-gap: 20px;
+   grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    'header header header'
+    'nav section1 section2'
+    'nav section3 section4'
+    'footer footer footer';
+}
+
+.mainheader{
+    grid-area: header;
+    background: url(img/Water.jpg);
+    background-size: cover;
+    background-position: center;
+    font-size: 1.5rem;
+    text-align: center;
+}
+nav{
+    background: url(img/fire.jpg);
+    background-size: cover;
+    background-position: bottom;
+    
+}
+.main-nav{
+    grid-area: nav;
+    
+}
+.main-nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    
+   }
+   nav ul li{
+    flex: 1 1;
+    
+   }
+.main-nav a{
+    list-style: none;
+    text-decoration: none;
+    color: bisque;
+    font-size: 2rem;
+}
+
+footer{
+    grid-area: footer;
+    background: url(img/Water.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 50px;
+    color: bisque;
+    font-weight: 800;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+.finfo{
+        flex: 1 1;
+}
+.baitwrapper{
+    display: flex;
+}
+.baittitle{
+    text-align: center;
+}
+.baitflex{
+    flex: 1 5 300px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
